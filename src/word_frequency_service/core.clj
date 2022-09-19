@@ -8,9 +8,9 @@
   (:gen-class))
 
 (defn base-system
-  ([] (base-system (or (-> (System/getenv "PROFILE")
-                           s/lower-case
-                           keyword) :dev)))
+  ([] (base-system (or (some-> (System/getenv "PROFILE")
+                               s/lower-case
+                               keyword) :dev)))
   ([profile]
    (let [config (read-config (io/resource "config.edn") {:profile profile})]
      (component/system-map :server (server/new-server (:server config))))))
