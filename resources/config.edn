@@ -1,0 +1,5 @@
+{:server {:port #long #or [#env PORT 8080]
+          :host #profile {:default "localhost"
+                          :prod    "0.0.0.0"}
+          :join #profile {:default false
+                          :prod    true}}}
