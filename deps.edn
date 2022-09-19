@@ -4,5 +4,6 @@
          com.stuartsierra/component   {:mvn/version "1.1.0"}
          aero/aero                    {:mvn/version "1.1.6"}
          io.pedestal/pedestal.route   {:mvn/version "0.5.10"}
-         org.slf4j/slf4j-simple       {:mvn/version "1.7.28"}}
+         org.slf4j/slf4j-simple       {:mvn/version "1.7.28"}
+         clj-http/clj-http            {:mvn/version "3.12.3"}}
  :paths ["src" "test" "resources"]}
