@@ -1,4 +1,4 @@
-# word-frequency-server
+# word-frequency-service
 
 A simple web application that exposes a single entrypoint with a service that receives a text and outputs a json with the word frequencies, sorted by count in descending order. The architecture is based on the [Nubank's guidelines](https://github.com/geraldodev/basic-microservice-example) relying on the hexagonal pattern.
 
