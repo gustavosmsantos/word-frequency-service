@@ -9,7 +9,7 @@
 
 (defonce system (base-system))
 
-(defn main- [& args]
+(defn -main [& args]
   (alter-var-root #'system component/start))
 
 (comment
